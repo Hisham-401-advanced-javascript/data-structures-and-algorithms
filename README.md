@@ -7,4 +7,5 @@
 CD # | Topic / Link | image
 ---------|------------- |-----------
 CD 1 | [array-reverse](https://github.com/Hisham-401-advanced-javascript/data-structures-and-algorithms/blob/master/challenges/arrayReverse/array-reverse.js) | ![array-reverse](assets/reverse-array.jpg)
-CD 2 | [array-shift](https://github.com/Hisham-401-advanced-javascript/data-structures-and-algorithms/blob/master/challenges/arrayReverse/array-shift.js) | ![array-reverse](assets/arrayShift.png)
+CD 2 | [array-shift](https://github.com/Hisham-401-advanced-javascript/data-structures-and-algorithms/blob/master/challenges/arrayReverse/array-shift.js) | ![array-shift](assets/arrayShift.png)
+CD 3 | [array-Binary-Search](https://github.com/Hisham-401-advanced-javascript/data-structures-and-algorithms/blob/master/challenges/arrayReverse/array-binary-search.js) | ![array-Binary-Search](arrayBinarySearch.png)

@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1599517415367" clover="3.2.0">
-  <project timestamp="1599517415368" name="All files">
-    <metrics statements="12" coveredstatements="12" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1" elements="15" coveredelements="14" complexity="0" loc="12" ncloc="12" packages="1" files="1" classes="1"/>
-    <file name="array-shift.js" path="/mnt/c/Users/Dell/projects/401/data-structures-and-algorithms/challenges/arrayShift/array-shift.js">
-      <metrics statements="12" coveredstatements="12" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
-      <line num="2" count="1" type="stmt"/>
-      <line num="3" count="3" type="stmt"/>
-      <line num="4" count="3" type="stmt"/>
-      <line num="7" count="3" type="stmt"/>
-      <line num="8" count="9" type="stmt"/>
-      <line num="10" count="3" type="cond" truecount="1" falsecount="1"/>
+<coverage generated="1599594217013" clover="3.2.0">
+  <project timestamp="1599594217014" name="All files">
+    <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1" elements="16" coveredelements="16" complexity="0" loc="11" ncloc="11" packages="1" files="1" classes="1"/>
+    <file name="array-binary-search.js" path="/mnt/c/Users/Dell/projects/401/data-structures-and-algorithms/challenges/arrayBinarySearch/array-binary-search.js">
+      <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <line num="9" count="3" type="stmt"/>
+      <line num="10" count="3" type="stmt"/>
       <line num="11" count="3" type="stmt"/>
-      <line num="12" count="3" type="stmt"/>
-      <line num="14" count="3" type="stmt"/>
-      <line num="15" count="9" type="stmt"/>
-      <line num="17" count="3" type="stmt"/>
-      <line num="21" count="1" type="stmt"/>
+      <line num="12" count="11" type="stmt"/>
+      <line num="13" count="11" type="cond" truecount="2" falsecount="0"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="16" count="10" type="cond" truecount="2" falsecount="0"/>
+      <line num="17" count="4" type="stmt"/>
+      <line num="20" count="6" type="stmt"/>
+      <line num="23" count="2" type="stmt"/>
+      <line num="27" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
