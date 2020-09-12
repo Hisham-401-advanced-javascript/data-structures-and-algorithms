@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1599948219981" clover="3.2.0">
-  <project timestamp="1599948219982" name="All files">
+<coverage generated="1599949175995" clover="3.2.0">
+  <project timestamp="1599949175995" name="All files">
     <metrics statements="31" coveredstatements="31" conditionals="10" coveredconditionals="10" methods="6" coveredmethods="6" elements="47" coveredelements="47" complexity="0" loc="31" ncloc="31" packages="1" files="1" classes="1"/>
     <file name="linked-list.js" path="/mnt/c/Users/Dell/projects/401/data-structures-and-algorithms/Data-Structures/linkedList/linked-list.js">
       <metrics statements="31" coveredstatements="31" conditionals="10" coveredconditionals="10" methods="6" coveredmethods="6"/>
