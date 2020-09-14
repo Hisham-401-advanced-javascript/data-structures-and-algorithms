@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1600033809190" clover="3.2.0">
-  <project timestamp="1600033809191" name="All files">
-    <metrics statements="91" coveredstatements="80" conditionals="32" coveredconditionals="25" methods="10" coveredmethods="10" elements="133" coveredelements="115" complexity="0" loc="91" ncloc="91" packages="3" files="3" classes="3"/>
+<coverage generated="1600121190790" clover="3.2.0">
+  <project timestamp="1600121190791" name="All files">
+    <metrics statements="109" coveredstatements="97" conditionals="38" coveredconditionals="30" methods="11" coveredmethods="11" elements="158" coveredelements="138" complexity="0" loc="109" ncloc="109" packages="3" files="3" classes="3"/>
     <package name="Data-Structures.linkedList">
-      <metrics statements="68" coveredstatements="57" conditionals="26" coveredconditionals="20" methods="8" coveredmethods="8"/>
+      <metrics statements="86" coveredstatements="74" conditionals="32" coveredconditionals="25" methods="9" coveredmethods="9"/>
       <file name="linked-list.js" path="/mnt/c/Users/Dell/projects/401/data-structures-and-algorithms/Data-Structures/linkedList/linked-list.js">
-        <metrics statements="68" coveredstatements="57" conditionals="26" coveredconditionals="20" methods="8" coveredmethods="8"/>
-        <line num="5" count="33" type="stmt"/>
-        <line num="6" count="33" type="stmt"/>
-        <line num="14" count="14" type="stmt"/>
-        <line num="19" count="19" type="stmt"/>
-        <line num="25" count="9" type="stmt"/>
-        <line num="27" count="9" type="cond" truecount="2" falsecount="0"/>
+        <metrics statements="86" coveredstatements="74" conditionals="32" coveredconditionals="25" methods="9" coveredmethods="9"/>
+        <line num="5" count="45" type="stmt"/>
+        <line num="6" count="45" type="stmt"/>
+        <line num="14" count="19" type="stmt"/>
+        <line num="19" count="28" type="stmt"/>
+        <line num="25" count="12" type="stmt"/>
+        <line num="27" count="12" type="cond" truecount="2" falsecount="0"/>
         <line num="28" count="1" type="stmt"/>
         <line num="29" count="1" type="stmt"/>
-        <line num="32" count="8" type="stmt"/>
-        <line num="33" count="8" type="stmt"/>
-        <line num="34" count="8" type="stmt"/>
-        <line num="36" count="8" type="stmt"/>
+        <line num="32" count="11" type="stmt"/>
+        <line num="33" count="11" type="stmt"/>
+        <line num="34" count="11" type="stmt"/>
+        <line num="36" count="11" type="stmt"/>
         <line num="40" count="2" type="stmt"/>
         <line num="42" count="2" type="cond" truecount="1" falsecount="1"/>
         <line num="43" count="0" type="stmt"/>
@@ -73,7 +73,25 @@
         <line num="134" count="2" type="stmt"/>
         <line num="135" count="2" type="stmt"/>
         <line num="137" count="1" type="stmt"/>
-        <line num="142" count="1" type="stmt"/>
+        <line num="141" count="5" type="cond" truecount="1" falsecount="1"/>
+        <line num="142" count="0" type="stmt"/>
+        <line num="144" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="145" count="1" type="stmt"/>
+        <line num="147" count="4" type="stmt"/>
+        <line num="148" count="4" type="stmt"/>
+        <line num="150" count="4" type="stmt"/>
+        <line num="151" count="5" type="stmt"/>
+        <line num="152" count="5" type="stmt"/>
+        <line num="154" count="4" type="stmt"/>
+        <line num="155" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="156" count="1" type="stmt"/>
+        <line num="158" count="3" type="stmt"/>
+        <line num="159" count="3" type="stmt"/>
+        <line num="160" count="3" type="stmt"/>
+        <line num="161" count="1" type="stmt"/>
+        <line num="162" count="1" type="stmt"/>
+        <line num="165" count="3" type="stmt"/>
+        <line num="172" count="1" type="stmt"/>
       </file>
     </package>
     <package name="challenges.arrayBinarySearch">

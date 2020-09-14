@@ -124,3 +124,39 @@ it('should return a string in the style of "{ a } -> { b } -> { c } -> NULL" whe
   expect(ll.toString()).toBe('{ bananas } -> { apples } -> { cucumbers } -> NULL');
 })
 
+it('should return the value of the node k before the end when a valid k is provided', () => {
+  const ll = new LinkedList();
+  ll.insert('apples');
+  ll.insert('bananas');
+  ll.append('cucumbers');
+  expect(ll.kthFromEnd(1)).toBe('apples');
+})
+
+it('should return the value of the node k before the end when k is the same as the length of the list - i.e. the first value', () => {
+  const ll = new LinkedList();
+  ll.insert('apples');
+  ll.insert('bananas');
+  ll.append('cucumbers');
+  expect(ll.kthFromEnd(2)).toBe('bananas');
+})
+
+it('should return an exception if k is not a positive integer', () => {
+  const ll = new LinkedList();
+  ll.insert('apples');
+  ll.insert('bananas');
+  ll.append('cucumbers');
+  expect(ll.kthFromEnd(-1)).toBe('Exception: please provide a k value of zero or greater');
+})
+
+it('should return the value of the node k before the end even with a single node list', () => {
+  const ll = new LinkedList();
+  ll.insert('apples');
+  expect(ll.kthFromEnd(0)).toBe('apples');
+})
+
+it('should return an exception if k is greater than the length of the linked list', () => {
+  const ll = new LinkedList();
+  ll.insert('apples');
+  ll.insert('bananas');
+  expect(ll.kthFromEnd(4)).toBe('Exception: List does not contain sufficient nodes for request');
+})
