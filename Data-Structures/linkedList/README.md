@@ -16,3 +16,7 @@ I applied the information I gathered through my reading assignments and class de
 
 ## Solution
 [linked-List](https://github.com/Hisham-401-advanced-javascript/data-structures-and-algorithms/blob/master/Data-Structures/linkedList/linked-list.js)
+
+# Whiteboard : 
+
+![WB](./C-06-whiteboard.png)
