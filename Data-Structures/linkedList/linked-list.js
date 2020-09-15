@@ -146,7 +146,7 @@ class LinkedList {
     }
     let listLength = 0;
     let currentNode = this.head;
-  
+
     while(currentNode.next){
       listLength++;
       currentNode=currentNode.next;
@@ -162,10 +162,12 @@ class LinkedList {
         currentNode = currentNode.next;
       }
     }
-  return currentNode.value;
+    return currentNode.value;
   }
-  
+
 }
+
+
 
 
 
