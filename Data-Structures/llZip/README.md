@@ -1,6 +1,6 @@
 # Zip Two Linked Lists
 
-### **[LINK TO CODE](https://github.com/alex-whan/data-structures-and-algorithms/blob/master/javascript/challenges/llZip/ll-zip.js)**
+### **[LINK TO CODE](https://github.com/Hisham-401-advanced-javascript/data-structures-and-algorithms/tree/ll-zip/Data-Structures/llZip)**
 
 ## Challenge
 
