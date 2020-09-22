@@ -3,36 +3,36 @@
 const { Stack } = require('../data-structures/stacksAndQueues/stacks-and-queues');
 
 class PseudoQueue {
-    constructor() {
-        this.stack1 = new Stack();
-        this.stack2 = new Stack();
+  constructor() {
+    this.stack1 = new Stack();
+    this.stack2 = new Stack();
+  }
+
+  enqueue(value) {
+    this.stack1.push(value);
+  }
+
+  dequeue() {
+    if (!this.stack1.top) {
+      throw new RangeError('Cannot dequeue from an empty queue!');
     }
 
-    enqueue(value) {
-        this.stack1.push(value);
+    let currentNode = this.stack1.top;
+    while (currentNode) {
+      currentNode = currentNode.next;
+      this.stack2.push(this.stack1.pop());
     }
 
-    dequeue() {
-        if (!this.stack1.top) {
-            throw new RangeError('Cannot dequeue from an empty queue!');
-        }
+    let result = this.stack2.pop();
 
-        let currentNode = this.stack1.top;
-        while (currentNode) {
-            currentNode = currentNode.next;
-            this.stack2.push(this.stack1.pop());
-        }
-
-        let result = this.stack2.pop();
-
-        currentNode = this.stack2.top;
-        while (currentNode) {
-            currentNode = currentNode.next;
-            this.stack1.push(this.stack2.pop());
-        }
-
-        return result;
+    currentNode = this.stack2.top;
+    while (currentNode) {
+      currentNode = currentNode.next;
+      this.stack1.push(this.stack2.pop());
     }
+
+    return result;
+  }
 }
 
 module.exports = PseudoQueue;
