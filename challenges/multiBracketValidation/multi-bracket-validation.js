@@ -1,39 +1,49 @@
-'use strict';
+const Stack = require('./stacks-and-queues.js');
 
-const multiBracketValidation = input => {
-  const stack = [];
-  const openBrackets = ['[', '{', '('];
-  const closingBrackets = [']', '}', ')'];
-
-  const match = {
-    ']': '[',
-    '}': '{',
-    ')': '(',
-  };
+function multiBracketValidation(input){
+  let openStack = new Stack;
+  let openBracket = '{[(';
 
   if (input.length <= 1) {
-    return ('Cannot validate an input of this length.');
+    throw new RangeError('Cannot validate an input of this length.');
   }
 
-  if (input.length > 1 && input.includes('{' || '[' || '(')) {
-    for (let i = 0; i < input.length; i++) {
-      let char = input[i];
-
-      if (openBrackets.includes(char)) {
-        stack.push(char);
-      }
-
-      if (closingBrackets.includes(char)) {
-        let popped = stack.pop();
-        if (popped !== match[char]) {
-          return false;
-        }
-        return true;
+  for(let i = 0; i<input.length; i++){
+    if(openBracket.includes(input[i])){
+      openStack.push(input[i]);
+    }
+    else if(input[i] === '}'){
+      if (openStack.isEmpty()){
+        return false;
+      } else {
+        if (openStack.peek() === '{'){
+          openStack.pop();
+        } else return false;
       }
     }
-  } else {
-    return false;
+    else if(input[i] === ']'){
+      if(openStack.isEmpty()){
+        return false;
+      } else {
+        if (openStack.peek() === '['){
+          openStack.pop();
+        } else return false;
+      }
+    }
+    else if(input[i] === ')'){
+      if(openStack.isEmpty()){
+        return false;
+      } else {
+        if (openStack.peek() === '('){
+          openStack.pop();
+        } else return false;
+      }
+    }
   }
-};
+  if(openStack.isEmpty()){
+    return true;
+  } else return false;
+
+}
 
 module.exports = multiBracketValidation;
