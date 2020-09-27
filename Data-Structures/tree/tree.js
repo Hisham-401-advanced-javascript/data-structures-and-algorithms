@@ -64,6 +64,55 @@ class BinaryTree {
 
     return output;
   }
+
+  findMaximumValue() {
+    if (!this.root) {
+      throw new RangeError('Tree is empty!');
+    }
+
+    let max = this.root.value;
+
+    function _findMaximumValue(root) {
+      if (!root) {
+        return;
+      }
+
+      if (root.value > max) {
+        max = root.value;
+      }
+
+      _findMaximumValue(root.left);
+      _findMaximumValue(root.right);
+    }
+
+    _findMaximumValue(this.root);
+    return max;
+  }
+
+  breadthFirstTraversal() {
+    const arr = [];
+    const queue = [];
+
+    if (!this.root) {
+      throw new RangeError('Tree is empty!');
+    }
+
+    queue.push(this.root);
+    while (queue) {
+      let front = queue.shift();
+      arr.push(front);
+
+      if (front.left) {
+        queue.push(front.left);
+      }
+
+      if (front.right) {
+        queue.push(front.right);
+      }
+    }
+
+    return arr;
+  }
 }
 
 // Create a BinarySearchTree class
