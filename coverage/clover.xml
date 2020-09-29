@@ -1,39 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1601414871567" clover="3.2.0">
-  <project timestamp="1601414871567" name="All files">
-    <metrics statements="103" coveredstatements="24" conditionals="42" coveredconditionals="6" methods="20" coveredmethods="6" elements="165" coveredelements="36" complexity="0" loc="103" ncloc="103" packages="1" files="2" classes="2"/>
-    <file name="breadth-first.js" path="/mnt/c/Users/Dell/projects/401/data-structures-and-algorithms/challenges/breadthFirst/breadth-first.js">
-      <metrics statements="23" coveredstatements="22" conditionals="7" coveredconditionals="6" methods="6" coveredmethods="5"/>
-      <line num="5" count="13" type="stmt"/>
-      <line num="6" count="13" type="stmt"/>
-      <line num="7" count="13" type="stmt"/>
-      <line num="13" count="0" type="stmt"/>
+<coverage generated="1601418000481" clover="3.2.0">
+  <project timestamp="1601418000481" name="All files">
+    <metrics statements="95" coveredstatements="28" conditionals="47" coveredconditionals="17" methods="16" coveredmethods="6" elements="158" coveredelements="51" complexity="0" loc="95" ncloc="95" packages="1" files="2" classes="2"/>
+    <file name="fizz-buzz-tree.js" path="/mnt/c/Users/Dell/projects/401/data-structures-and-algorithms/challenges/fizzBuzzTree/fizz-buzz-tree.js">
+      <metrics statements="15" coveredstatements="15" conditionals="12" coveredconditionals="12" methods="2" coveredmethods="2"/>
+      <line num="6" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="11" count="18" type="cond" truecount="2" falsecount="0"/>
+      <line num="12" count="12" type="stmt"/>
+      <line num="14" count="6" type="cond" truecount="4" falsecount="0"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="16" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="17" count="2" type="stmt"/>
+      <line num="18" count="3" type="cond" truecount="2" falsecount="0"/>
       <line num="19" count="2" type="stmt"/>
-      <line num="20" count="2" type="stmt"/>
-      <line num="21" count="2" type="stmt"/>
-      <line num="24" count="13" type="stmt"/>
-      <line num="25" count="13" type="stmt"/>
-      <line num="26" count="13" type="stmt"/>
-      <line num="29" count="13" type="stmt"/>
-      <line num="34" count="2" type="stmt"/>
-      <line num="35" count="2" type="stmt"/>
-      <line num="36" count="2" type="stmt"/>
-      <line num="37" count="2" type="stmt"/>
-      <line num="38" count="13" type="stmt"/>
-      <line num="39" count="13" type="stmt"/>
-      <line num="40" count="13" type="cond" truecount="2" falsecount="0"/>
-      <line num="41" count="6" type="stmt"/>
-      <line num="43" count="13" type="cond" truecount="2" falsecount="0"/>
-      <line num="44" count="5" type="stmt"/>
-      <line num="47" count="2" type="stmt"/>
-      <line num="50" count="1" type="stmt"/>
+      <line num="21" count="1" type="stmt"/>
+      <line num="23" count="6" type="stmt"/>
+      <line num="24" count="6" type="stmt"/>
+      <line num="27" count="6" type="stmt"/>
+      <line num="31" count="1" type="stmt"/>
     </file>
-    <file name="tree.js" path="/mnt/c/Users/Dell/projects/401/data-structures-and-algorithms/challenges/breadthFirst/tree.js">
-      <metrics statements="80" coveredstatements="2" conditionals="35" coveredconditionals="0" methods="14" coveredmethods="1"/>
-      <line num="6" count="0" type="stmt"/>
-      <line num="7" count="0" type="stmt"/>
-      <line num="8" count="0" type="stmt"/>
-      <line num="14" count="2" type="stmt"/>
+    <file name="tree.js" path="/mnt/c/Users/Dell/projects/401/data-structures-and-algorithms/challenges/fizzBuzzTree/tree.js">
+      <metrics statements="80" coveredstatements="13" conditionals="35" coveredconditionals="5" methods="14" coveredmethods="4"/>
+      <line num="6" count="11" type="stmt"/>
+      <line num="7" count="11" type="stmt"/>
+      <line num="8" count="11" type="stmt"/>
+      <line num="14" count="7" type="stmt"/>
       <line num="18" count="0" type="stmt"/>
       <line num="21" count="0" type="cond" truecount="0" falsecount="2"/>
       <line num="22" count="0" type="stmt"/>
@@ -42,14 +34,14 @@
       <line num="26" count="0" type="stmt"/>
       <line num="29" count="0" type="stmt"/>
       <line num="31" count="0" type="stmt"/>
-      <line num="35" count="0" type="stmt"/>
-      <line num="38" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="39" count="0" type="stmt"/>
-      <line num="41" count="0" type="stmt"/>
-      <line num="42" count="0" type="stmt"/>
-      <line num="43" count="0" type="stmt"/>
-      <line num="46" count="0" type="stmt"/>
-      <line num="48" count="0" type="stmt"/>
+      <line num="35" count="6" type="stmt"/>
+      <line num="38" count="28" type="cond" truecount="2" falsecount="0"/>
+      <line num="39" count="17" type="stmt"/>
+      <line num="41" count="11" type="stmt"/>
+      <line num="42" count="11" type="stmt"/>
+      <line num="43" count="11" type="stmt"/>
+      <line num="46" count="6" type="stmt"/>
+      <line num="48" count="6" type="stmt"/>
       <line num="52" count="0" type="stmt"/>
       <line num="55" count="0" type="cond" truecount="0" falsecount="2"/>
       <line num="56" count="0" type="stmt"/>
