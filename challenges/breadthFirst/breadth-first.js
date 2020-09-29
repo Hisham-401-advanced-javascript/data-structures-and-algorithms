@@ -1,44 +1,50 @@
 'use strict';
 
-const BinaryTree = require('./tree.js');
-
-const Queue = require('../../Data-Structures/stacksAndQueues/stacks-and-queues.js');
-
-// ======================================================
-
-class ExtendedBinaryTree extends BinaryTree {
-
-  constructor(root){
-    super(root);
+class Node {
+  constructor(value, left = null, right = null){
+    this.value = value;
+    this.left = left;
+    this.right = right;
   }
-
-  breadthFirst(tree){
-
-    if(!tree.root){
-      return;
-    }
-
-    const output = [];
-
-    let breadthQueue = new Queue();
-    breadthQueue.enqueue(tree.root);
-
-    while(!breadthQueue.isEmpty()){
-      
-      let formerFront = breadthQueue.dequeue();
-      output.push(formerFront.value);
-
-      if(formerFront.leftChild){
-        breadthQueue.enqueue(formerFront.leftChild);
-      }
-      if(formerFront.rightChild){
-        breadthQueue.enqueue(formerFront.rightChild);
-      }
-    }
-    return output;
-  }
-
 }
 
+class Tree {
+  constructor(root = null) {
+    this.root = root;
+  }
+}
 
-module.exports = ExtendedBinaryTree;
+class Queue {
+  constructor(){
+    this.front = null;
+    this.rear = null;
+    this.queue = [];
+  }
+  enqueue(val){
+    this.queue.push(val);
+    this.front = this.queue[0];
+    this.rear = val;
+  }
+  dequeue(){
+    return this.queue.shift();
+  }
+}
+
+function breadthFirst(tree){
+  let que = new Queue();
+  let arr = [];
+  que.enqueue(tree.root);
+  while(que.queue.length){
+    let front = que.dequeue();
+    arr.push(front.value);
+    if(front.left){
+      que.enqueue(front.left)
+    }
+    if(front.right){
+      que.enqueue(front.right)
+    }
+  }
+  return arr;
+}
+
+module.exports = { Node, Tree, Queue, breadthFirst }

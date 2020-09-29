@@ -1,72 +1,32 @@
 'use strict';
 
-const ExtendedBinaryTree = require('../breadth-first.js');
+const {Node} = require('../breadth-first.js');
+const {BinaryTree} = require('../tree.js');
+const {breadthFirst} = require('../breadth-first.js');
 
-// ==================================================================
-// Sample Tree SetUp
+describe('Breadth First', () => {
+  it('should return expected output on a balanced tree', () => {
+    let one = new Node(1);
+    let two = new Node(2);
+    let three = new Node(3, one, two);
+    let six = new Node(6);
+    let seven = new Node(7);
+    let five = new Node(5, six, seven);
+    let four = new Node(4, three, five);
 
-class Node {
-  constructor(value, left=null, right=null){
-    this.value = value;
-    this.leftChild =left;
-    this.rightChild = right;
-  }
-}
+    let tree = new BinaryTree(four);
+    expect(breadthFirst(tree)).toStrictEqual([4,3,5,1,2,6,7]);
+  });
 
-const iNode = new Node (11);
-const hNode = new Node (5);
-const gNode = new Node (4);
-const fNode = new Node (9, gNode);
-const eNode = new Node (6, hNode, iNode);
-const dNode = new Node (2);
-const cNode = new Node (5, null, fNode);
-const bNode = new Node (7, dNode, eNode);
-const rootNode = new Node (2, bNode, cNode);
+  it('should return expected output on a unbalanced tree', () => {
+    let four = new Node(4);
+    let five = new Node(5);
+    let two = new Node(2, four, five);
+    let six = new Node(6);
+    let three = new Node(3, six);
+    let one = new Node(1, two, three);
 
-// ==================================================================
-// Can successfully instantiate an empty tree
-
-it ('should instantiate an empty tree', () => {
-  const tree = new ExtendedBinaryTree();
-  expect(tree).toBeTruthy();
-});
-// ==================================================================
-// Can successfully return a collection from a preorder traversal
-
-it ('should return a collection from a preorder traversal', () => {
-  const tree = new ExtendedBinaryTree(rootNode);
-  expect(tree).toBeTruthy();
-  expect(tree.root.value).toBe(2);
-  expect(tree.preOrder()).toEqual([2,7,2,6,5,11,5,9,4]);
-});
-
-// ==================================================================
-// Can successfully return a collection from an inorder traversal
-
-it ('should return a collection from an inorder traversal', () => {
-  const tree = new ExtendedBinaryTree(rootNode);
-  expect(tree).toBeTruthy();
-  expect(tree.root.value).toBe(2);
-  expect(tree.inOrder()).toEqual([2,7,5,6,11,2,5,4,9]);
-});
-
-
-// ==================================================================
-// Can successfully return a collection from a postorder traversal
-
-it ('should return a collection from a postorder traversal', () => {
-  const tree = new ExtendedBinaryTree(rootNode);
-  expect(tree).toBeTruthy();
-  expect(tree.root.value).toBe(2);
-  expect(tree.postOrder()).toEqual([2,5,11,6,7,4,9,5,2]);
-});
-
-// ==================================================================
-// Can successfully return a collection from a breadth first traversal
-
-it ('should return a collection from a breadth first traversal', () => {
-  const tree = new ExtendedBinaryTree(rootNode);
-  expect(tree).toBeTruthy();
-  expect(tree.root.value).toBe(2);
-  expect(tree.breadthFirst(tree)).toEqual([2,7,5,2,6,9,5,11,4]);
-});
+    let tree = new BinaryTree(one);
+    expect(breadthFirst(tree)).toStrictEqual([1,2,3,4,5,6]);
+  });
+})
