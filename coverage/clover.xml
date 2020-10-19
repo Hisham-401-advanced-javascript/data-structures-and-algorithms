@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1603059024515" clover="3.2.0">
-  <project timestamp="1603059024515" name="All files">
-    <metrics statements="37" coveredstatements="29" conditionals="11" coveredconditionals="6" methods="6" coveredmethods="5" elements="54" coveredelements="40" complexity="0" loc="37" ncloc="37" packages="2" files="2" classes="2"/>
+<coverage generated="1603112500779" clover="3.2.0">
+  <project timestamp="1603112500780" name="All files">
+    <metrics statements="118" coveredstatements="52" conditionals="48" coveredconditionals="15" methods="20" coveredmethods="11" elements="186" coveredelements="78" complexity="0" loc="118" ncloc="118" packages="3" files="3" classes="3"/>
     <package name="Data-Structures.hashtable">
-      <metrics statements="24" coveredstatements="16" conditionals="9" coveredconditionals="4" methods="5" coveredmethods="4"/>
+      <metrics statements="24" coveredstatements="17" conditionals="9" coveredconditionals="5" methods="5" coveredmethods="4"/>
       <file name="hashtable.js" path="/mnt/c/Users/Dell/projects/401/data-structures-and-algorithms/Data-Structures/hashtable/hashtable.js">
-        <metrics statements="24" coveredstatements="16" conditionals="9" coveredconditionals="4" methods="5" coveredmethods="4"/>
-        <line num="5" count="7" type="stmt"/>
-        <line num="9" count="49" type="stmt"/>
-        <line num="10" count="49" type="stmt"/>
-        <line num="12" count="49" type="cond" truecount="1" falsecount="1"/>
-        <line num="13" count="49" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
+        <metrics statements="24" coveredstatements="17" conditionals="9" coveredconditionals="5" methods="5" coveredmethods="4"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="9" count="9" type="stmt"/>
+        <line num="10" count="9" type="stmt"/>
+        <line num="12" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="8" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
         <line num="20" count="0" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
         <line num="23" count="0" type="cond" truecount="0" falsecount="2"/>
@@ -19,36 +19,123 @@
         <line num="26" count="0" type="stmt"/>
         <line num="27" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="28" count="0" type="stmt"/>
-        <line num="35" count="55" type="stmt"/>
-        <line num="36" count="55" type="cond" truecount="2" falsecount="0"/>
-        <line num="37" count="49" type="stmt"/>
-        <line num="39" count="6" type="stmt"/>
-        <line num="44" count="104" type="stmt"/>
-        <line num="46" count="104" type="stmt"/>
-        <line num="47" count="368" type="stmt"/>
-        <line num="50" count="104" type="stmt"/>
-        <line num="51" count="104" type="stmt"/>
-        <line num="52" count="104" type="stmt"/>
+        <line num="35" count="10" type="stmt"/>
+        <line num="36" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="37" count="5" type="stmt"/>
+        <line num="39" count="5" type="stmt"/>
+        <line num="44" count="19" type="stmt"/>
+        <line num="46" count="19" type="stmt"/>
+        <line num="47" count="19" type="stmt"/>
+        <line num="50" count="19" type="stmt"/>
+        <line num="51" count="19" type="stmt"/>
+        <line num="52" count="19" type="stmt"/>
         <line num="56" count="1" type="stmt"/>
       </file>
     </package>
-    <package name="challenges.repeated-word">
-      <metrics statements="13" coveredstatements="13" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-      <file name="repeated-word.js" path="/mnt/c/Users/Dell/projects/401/data-structures-and-algorithms/challenges/repeated-word/repeated-word.js">
-        <metrics statements="13" coveredstatements="13" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="7" type="stmt"/>
-        <line num="6" count="7" type="stmt"/>
-        <line num="8" count="7" type="stmt"/>
-        <line num="10" count="7" type="stmt"/>
-        <line num="11" count="55" type="stmt"/>
-        <line num="12" count="55" type="stmt"/>
-        <line num="13" count="55" type="cond" truecount="2" falsecount="0"/>
-        <line num="14" count="6" type="stmt"/>
-        <line num="16" count="49" type="stmt"/>
-        <line num="20" count="1" type="stmt"/>
-        <line num="23" count="1" type="stmt"/>
+    <package name="Data-Structures.tree">
+      <metrics statements="80" coveredstatements="21" conditionals="35" coveredconditionals="6" methods="14" coveredmethods="6"/>
+      <file name="tree.js" path="/mnt/c/Users/Dell/projects/401/data-structures-and-algorithms/Data-Structures/tree/tree.js">
+        <metrics statements="80" coveredstatements="21" conditionals="35" coveredconditionals="6" methods="14" coveredmethods="6"/>
+        <line num="6" count="19" type="stmt"/>
+        <line num="7" count="19" type="stmt"/>
+        <line num="8" count="19" type="stmt"/>
+        <line num="14" count="8" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="21" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="35" count="8" type="stmt"/>
+        <line num="38" count="46" type="cond" truecount="2" falsecount="0"/>
+        <line num="39" count="27" type="stmt"/>
+        <line num="41" count="19" type="stmt"/>
+        <line num="42" count="19" type="stmt"/>
+        <line num="43" count="19" type="stmt"/>
+        <line num="46" count="8" type="stmt"/>
+        <line num="48" count="8" type="stmt"/>
+        <line num="52" count="8" type="stmt"/>
+        <line num="55" count="46" type="cond" truecount="2" falsecount="0"/>
+        <line num="56" count="27" type="stmt"/>
+        <line num="58" count="19" type="stmt"/>
+        <line num="59" count="19" type="stmt"/>
+        <line num="60" count="19" type="stmt"/>
+        <line num="63" count="8" type="stmt"/>
+        <line num="65" count="8" type="stmt"/>
+        <line num="69" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="70" count="0" type="stmt"/>
+        <line num="73" count="0" type="stmt"/>
+        <line num="76" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="77" count="0" type="stmt"/>
+        <line num="80" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="81" count="0" type="stmt"/>
+        <line num="84" count="0" type="stmt"/>
+        <line num="85" count="0" type="stmt"/>
+        <line num="88" count="0" type="stmt"/>
+        <line num="89" count="0" type="stmt"/>
+        <line num="93" count="0" type="stmt"/>
+        <line num="94" count="0" type="stmt"/>
+        <line num="96" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="97" count="0" type="stmt"/>
+        <line num="100" count="0" type="stmt"/>
+        <line num="101" count="0" type="stmt"/>
+        <line num="102" count="0" type="stmt"/>
+        <line num="103" count="0" type="stmt"/>
+        <line num="105" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="106" count="0" type="stmt"/>
+        <line num="109" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="110" count="0" type="stmt"/>
+        <line num="114" count="0" type="stmt"/>
+        <line num="123" count="0" type="stmt"/>
+        <line num="124" count="0" type="stmt"/>
+        <line num="126" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="127" count="0" type="stmt"/>
+        <line num="130" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="131" count="0" type="stmt"/>
+        <line num="133" count="0" type="stmt"/>
+        <line num="137" count="0" type="stmt"/>
+        <line num="138" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="139" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="140" count="0" type="stmt"/>
+        <line num="141" count="0" type="stmt"/>
+        <line num="143" count="0" type="stmt"/>
+        <line num="144" count="0" type="stmt"/>
+        <line num="147" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="148" count="0" type="stmt"/>
+        <line num="149" count="0" type="stmt"/>
+        <line num="151" count="0" type="stmt"/>
+        <line num="152" count="0" type="stmt"/>
+        <line num="161" count="0" type="stmt"/>
+        <line num="162" count="0" type="stmt"/>
+        <line num="163" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="164" count="0" type="stmt"/>
+        <line num="167" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="168" count="0" type="stmt"/>
+        <line num="170" count="0" type="stmt"/>
+        <line num="173" count="0" type="stmt"/>
+        <line num="177" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="challenges.treeIntersection">
+      <metrics statements="14" coveredstatements="14" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <file name="tree-intersection.js" path="/mnt/c/Users/Dell/projects/401/data-structures-and-algorithms/challenges/treeIntersection/tree-intersection.js">
+        <metrics statements="14" coveredstatements="14" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="13" count="9" type="stmt"/>
+        <line num="14" count="9" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="19" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="20" count="5" type="stmt"/>
+        <line num="24" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="27" count="1" type="stmt"/>
       </file>
     </package>
   </project>
